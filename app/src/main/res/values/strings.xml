@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Quotes App</string>
+    <string name="quotify">QUOTIFY</string>
+    <string name="genius_is_one_percent_inspiration_and_ninety_nine_percent_perspiration">Genius is one percent inspiration and ninety-nine percent perspiration.</string>
+    <string name="author">Author</string>
+</resources>
