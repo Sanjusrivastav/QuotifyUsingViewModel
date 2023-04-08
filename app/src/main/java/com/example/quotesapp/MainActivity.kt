@@ -2,7 +2,6 @@ package com.example.quotesapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import com.example.quotesapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

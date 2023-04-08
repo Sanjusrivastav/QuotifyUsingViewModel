@@ -4,85 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/gradient"
     android:padding="32dp"
-    android:paddingTop="32dp"
     tools:context=".MainActivity">
-
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="170dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="170dp"
-        android:text="@string/quotify"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:text="Quotes"
         android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="322dp"
-        android:layout_height="311dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="183dp"
-        android:orientation="vertical"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="10dp"
-        app:cardMaxElevation="12dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/img" />
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="275dp"
-            android:layout_height="166dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="70dp"
-            android:text="@string/genius_is_one_percent_inspiration_and_ninety_nine_percent_perspiration"
-            android:textSize="25sp"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:textAlignment="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            >
 
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="56dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="240dp"
-            android:text="@string/author"
-            android:textSize="25sp"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/quoteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genius is one percent inspiration and ninety-nine percent perspiration"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="55dp"/>
+
+            <TextView
+                android:id="@+id/quoteAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Author"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginTop="220dp"
+                android:layout_marginStart="20dp"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_share"
+                android:layout_marginTop="220dp"
+                android:layout_marginStart="250dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
 
 
-            />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:background="@color/black"
-            app:srcCompat="@drawable/baseline_share"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="250dp"
-            tools:ignore="ContentDescription"
-            android:focusable="true" />
-
-    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
